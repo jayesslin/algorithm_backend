@@ -15,7 +15,6 @@ public class 链表_链表反转 {
 	public ListNode ReverseList(ListNode head) {
 		ListNode next ,pre;
 		pre = null;
-		
 		if (head == null)
             return head;
 		while (head!=null) {
@@ -23,7 +22,6 @@ public class 链表_链表反转 {
 			head.next = pre;
 			pre = head; 
 			head = next ; 
-
 		}
 		return pre;
 	        

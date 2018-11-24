@@ -25,7 +25,7 @@ public class 树_前序中序重建二叉树 {
 			for(int i = instart; i<=inend; i++) 
 				if (in[i]==pre[prestart]) {
 					//结合前序遍历  中序遍历的根节点左边 为 该子树的左子树 ， 右边 为 子树的右子树
-					//根据 i的值 和 前中序位置 确定 左子树 在 前序的范围，   和在中序的范围
+					//根据 i的值 和 前中序位置 确定 左子树 在 前序的范围，和在中序的范围
 					root.left=reConstructBinaryTree(pre,prestart+1,i-instart+prestart,in,instart,i-1);
 					//根据 i的值 和 前中序位置 确定 右子树 在 前序的范围，   和在中序的范围
 					root.right =reConstructBinaryTree(pre,i-instart+prestart+1,preend,in,i+1,inend);
