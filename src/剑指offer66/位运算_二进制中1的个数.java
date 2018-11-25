@@ -1,10 +1,10 @@
-package ½£Ö¸offer66;
+package å‰‘æŒ‡offer66;
 /*
  * 
- * Ö±½Óµ÷ÓÃAPI
+ * ç›´æ¥è°ƒç”¨API
  * 
  * */
-public class Î»ÔËËã_¶ş½øÖÆÖĞ1µÄ¸öÊı {
+public class ä½è¿ç®—_äºŒè¿›åˆ¶ä¸­1çš„ä¸ªæ•° {
 	 public static int NumberOf1(int n) {
 		 	return Integer.bitCount(n);
 	    }

@@ -1,13 +1,13 @@
-package ½£Ö¸offer66;
+package å‰‘æŒ‡offer66;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class º£µºÎÊÌâ_º£µºÊıÁ¿_º£µº×î´óÃæ»ı {
+public class æµ·å²›é—®é¢˜_æµ·å²›æ•°é‡_æµ·å²›æœ€å¤§é¢ç§¯ {
 	public static Map<Integer,Integer> numIslands(int[][] grid) {
 		int num = 0 ;
-		//Í³¼Æ×î´óµºÓìÃæ»ı
+		//ç»Ÿè®¡æœ€å¤§å²›å±¿é¢ç§¯
 		int area =  0;
 		int tmp;
 		Map<Integer,Integer> res= new HashMap<Integer,Integer>();
@@ -27,7 +27,7 @@ public class º£µºÎÊÌâ_º£µºÊıÁ¿_º£µº×î´óÃæ»ı {
 	}
 	public static int[][] account(int[][] grid, int i ,int j) {
 		grid[i][j] = 0; 
-		//ÓĞÎÊÌâ
+		//æœ‰é—®é¢˜
 		if(i>0 && grid[i-1][j]==1) {
 			grid=account(grid,i-1,j);
 		}
@@ -42,9 +42,9 @@ public class º£µºÎÊÌâ_º£µºÊıÁ¿_º£µº×î´óÃæ»ı {
 		}
 		return grid; 
 	}
-	//¼ÆËã×î´óµºÓìÃæ»ı
+	//è®¡ç®—æœ€å¤§å²›å±¿é¢ç§¯
 	public static int accountArea(int[][] grid,int i,int j ) {
-		//ÉèÖÃ³ö¿ÚÌõ¼ş  ÅĞ¶ÏËÄ¸ö±ßµÄÔ½½çÌõ¼ş  ºÍ Èç¹û²»ÊÇ 1  Ö±½Ó·µ»Ø0 
+		//è®¾ç½®å‡ºå£æ¡ä»¶  åˆ¤æ–­å››ä¸ªè¾¹çš„è¶Šç•Œæ¡ä»¶  å’Œ å¦‚æœä¸æ˜¯ 1  ç›´æ¥è¿”å›0 
 		if(i<0||j<0||i>=grid.length||j>=grid[0].length||grid[i][j]!=1) return 0;
 		grid[i][j]=0;
 		return 1+accountArea(grid,i-1,j)+accountArea(grid,i+1,j)+accountArea(grid,i,j+1)+accountArea(grid,i,j-1);
@@ -68,7 +68,7 @@ public class º£µºÎÊÌâ_º£µºÊıÁ¿_º£µº×î´óÃæ»ı {
 			c= new int[i][j];
 			for(int x =0 ; x<i;x++) {
 				for (int y =0 ; y<j;y++) {
-					System.out.print("ÕıÔÚÊäÈë"); 
+					System.out.print("æ­£åœ¨è¾“å…¥"); 
 					c[x][y] = in.nextInt();
 				}
 			}System.out.println(numIslands(c));*/
@@ -83,7 +83,7 @@ public class º£µºÎÊÌâ_º£µºÊıÁ¿_º£µº×î´óÃæ»ı {
 		Map<Integer,Integer> res = numIslands(a);
 		for(int num : res.keySet()) {
 			int area = res.get(num);
-			System.out.println("µºÓì¸öÊı"+ num+ " ×î´óÃæ»ı "+area);
+			System.out.println("å²›å±¿ä¸ªæ•°"+ num+ " æœ€å¤§é¢ç§¯ "+area);
 		}
 		//System.out.println(numIslands(a));
 	}

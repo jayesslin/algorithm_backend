@@ -1,6 +1,6 @@
-package 剑指offer66;
+package 鍓戞寚offer66;
 
-public class 链表_链表反转 {
+public class 閾捐〃_閾捐〃鍙嶈浆 {
 	public class ListNode {
 	    int val;
 	    ListNode next = null;
@@ -10,7 +10,7 @@ public class 链表_链表反转 {
 	    }
 	} 
 	/*
-	 * 三个指针不停维护一个自反转链表
+	 * 涓変釜鎸囬拡涓嶅仠缁存姢涓�涓嚜鍙嶈浆閾捐〃
 	 */
 	public ListNode ReverseList(ListNode head) {
 		ListNode next ,pre;

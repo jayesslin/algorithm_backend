@@ -1,10 +1,10 @@
-package ½£Ö¸offer66;
+package å‰‘æŒ‡offer66;
 /*
  * 
- * ĞèÒª¿¼ÂÇ  ¸ºÊıµÄÖ¸Êı
+ * éœ€è¦è€ƒè™‘  è´Ÿæ•°çš„æŒ‡æ•°
  * 
  * */
-public class ´úÂëÍêÕûĞÔ_ÊıÖµµÄÕûÊı´Î·½ {
+public class  ä»£ç å®Œæ•´æ€§_æ•°å€¼çš„æ•´æ•°æ¬¡æ–¹ {
 	public static double Power(double base, int exponent) {
         double result = base ;	
 		for(int i =1; i<Math.abs(exponent);i++) {

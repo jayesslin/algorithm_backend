@@ -1,6 +1,6 @@
-package ½£Ö¸offer66;
+package å‰‘æŒ‡offer66;
 
-public class Á´±í_µ¹ÊıµÚk¸ö½áµã {
+public class é“¾è¡¨_å€’æ•°ç¬¬kä¸ªç»“ç‚¹ {
 	public class ListNode {
 	    int val;
 	    ListNode next = null;
@@ -10,12 +10,12 @@ public class Á´±í_µ¹ÊıµÚk¸ö½áµã {
 	    }
 	}
 	public ListNode FindKthToTail(ListNode head,int k) {
-      //×¢Òâ±ß½çÌõ¼ş
+      //æ³¨æ„è¾¹ç•Œæ¡ä»¶
 	   if (k<=0||head==null) return null;
        ListNode x= head;
        ListNode y= head;
        int i ;
-       //ÊıÑ§¹ØÏµ
+       //æ•°å­¦å…³ç³»
        for(i = 1;i < k ; i++) {
 			if(x.next!= null){
                x = x.next;

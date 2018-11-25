@@ -1,14 +1,14 @@
-package ½£Ö¸offer66;
+package å‰‘æŒ‡offer66;
 
-import ½£Ö¸offer66.Ê÷_Ç°ĞòÖĞĞòÖØ½¨¶ş²æÊ÷.TreeNode;
+import å‰‘æŒ‡offer66.æ ‘_å‰åºä¸­åºé‡å»ºäºŒå‰æ ‘.TreeNode;
 
 /*
- * ÊäÈëÁ½¿Ã¶ş²æÊ÷A£¬B£¬ÅĞ¶ÏBÊÇ²»ÊÇAµÄ×Ó½á¹¹¡££¨ps£ºÎÒÃÇÔ¼¶¨¿ÕÊ÷²»ÊÇÈÎÒâÒ»¸öÊ÷µÄ×Ó½á¹¹£©
+ * è¾“å…¥ä¸¤æ£µäºŒå‰æ ‘Aï¼ŒBï¼Œåˆ¤æ–­Bæ˜¯ä¸æ˜¯Açš„å­ç»“æ„ã€‚ï¼ˆpsï¼šæˆ‘ä»¬çº¦å®šç©ºæ ‘ä¸æ˜¯ä»»æ„ä¸€ä¸ªæ ‘çš„å­ç»“æ„ï¼‰
  */
-public class Ê÷_Ê÷µÄ×Ó½á¹¹ {
+public class æ ‘_æ ‘çš„å­ç»“æ„ {
     public boolean HasSubtree(TreeNode root1,TreeNode root2) {
-    	//ÉèÖÃ±êÊ¶·û ÒòÎªÒ»µ©Æ¥Åä³É¹¦result¾ÍÉèÎªtrue£¬
-    	//Ê£ÏÂµÄ´úÂë²»»áÖ´ĞĞ£¬Èç¹ûÆ¥Åä²»³É¹¦£¬Ä¬ÈÏ·µ»Øfalse
+    	//è®¾ç½®æ ‡è¯†ç¬¦ å› ä¸ºä¸€æ—¦åŒ¹é…æˆåŠŸresultå°±è®¾ä¸ºtrueï¼Œ
+    	//å‰©ä¸‹çš„ä»£ç ä¸ä¼šæ‰§è¡Œï¼Œå¦‚æœåŒ¹é…ä¸æˆåŠŸï¼Œé»˜è®¤è¿”å›false
     	boolean res = false;
     	
     	if (root1 != null && root2!=null) {
@@ -16,11 +16,11 @@ public class Ê÷_Ê÷µÄ×Ó½á¹¹ {
 		    	res =  HasSameNode(root1, root2);
 		    }
 			if(!res) {
-				//µİ¹é´Ë·½·¨ °Ñ×ÓÊ÷ÒÆµ½Ö÷Ê÷×ó²à
+				//é€’å½’æ­¤æ–¹æ³• æŠŠå­æ ‘ç§»åˆ°ä¸»æ ‘å·¦ä¾§
 				res = HasSubtree(root1.left, root2);
 			}
 			if(!res) {
-				//µİ¹é´Ë·½·¨ °Ñ×ÓÊ÷ÒÆµ½Ö÷Ê÷ÓÒ²à
+				//é€’å½’æ­¤æ–¹æ³• æŠŠå­æ ‘ç§»åˆ°ä¸»æ ‘å³ä¾§
 				res= HasSubtree(root1.right, root2);
 			}
     	}   
@@ -29,9 +29,9 @@ public class Ê÷_Ê÷µÄ×Ó½á¹¹ {
     public boolean HasSameNode(TreeNode root1,TreeNode root2) {
     	if (root1 ==null && root2 !=null) return false;
     	if (root2==null) return true;
-    	//´íÎó  £¬ Èç¹û2Ê÷ Îª¿Õ ËµÃ÷ 2Ê÷±éÀú½áÊø ¡£
+    	//é”™è¯¯  ï¼Œ å¦‚æœ2æ ‘ ä¸ºç©º è¯´æ˜ 2æ ‘éå†ç»“æŸ ã€‚
     	//else if (root1 !=null && root2 ==null) return false;
-    	//Ç§Íò×¢Òâ ÕâÀïÊÇ±È½ÏÖµ£¡£¡£¡£¡£¡
+    	//åƒä¸‡æ³¨æ„ è¿™é‡Œæ˜¯æ¯”è¾ƒå€¼ï¼ï¼ï¼ï¼ï¼
     	if (root1.val!=root2.val) return false ;
     	return HasSameNode(root1.left,root2.left) && HasSameNode(root1.right,root2.right);
     }

@@ -1,8 +1,8 @@
-package 剑指offer66;
+package 鍓戞寚offer66;
 
 import model.TreeNode;
 
-public class 树_判断是否是平衡二叉树 {
+public class 鏍慱鍒ゆ柇鏄惁鏄钩琛′簩鍙夋爲 {
 	public class TreeNode {
 	    int val = 0;
 	    TreeNode left = null;

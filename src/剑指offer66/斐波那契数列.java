@@ -1,10 +1,10 @@
-package ½£Ö¸offer66;
+package å‰‘æŒ‡offer66;
 /*
- * ´ó¼Ò¶¼ÖªµÀì³²¨ÄÇÆõÊýÁÐ£¬ÏÖÔÚÒªÇóÊäÈëÒ»¸öÕûÊýn£¬
- *ÇëÄãÊä³öì³²¨ÄÇÆõÊýÁÐµÄµÚnÏî£¨´Ó0¿ªÊ¼£¬µÚ0ÏîÎª0£©¡£
+ * å¤§å®¶éƒ½çŸ¥é“æ–æ³¢é‚£å¥‘æ•°åˆ—ï¼ŒçŽ°åœ¨è¦æ±‚è¾“å…¥ä¸€ä¸ªæ•´æ•°nï¼Œ
+ *è¯·ä½ è¾“å‡ºæ–æ³¢é‚£å¥‘æ•°åˆ—çš„ç¬¬né¡¹ï¼ˆä»Ž0å¼€å§‹ï¼Œç¬¬0é¡¹ä¸º0ï¼‰ã€‚
  *n<=39
  */
-public class ì³²¨ÄÇÆõÊýÁÐ {
+public class æ–æ³¢é‚£å¥‘æ•°åˆ— {
 	public int Fibonacci(int n) {
         if (n==0) return 0;
         if(n==1)return 1;

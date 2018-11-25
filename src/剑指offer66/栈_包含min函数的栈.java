@@ -1,21 +1,21 @@
-package ½£Ö¸offer66;
+package å‰‘æŒ‡offer66;
 
 import java.util.Stack;
 
 /*
- * ¶¨ÒåÕ»µÄÊı¾İ½á¹¹£¬ÇëÔÚ¸ÃÀàĞÍÖĞÊµÏÖÒ»¸öÄÜ¹»µÃµ½Õ»ÖĞËùº¬×îĞ¡ÔªËØµÄminº¯Êı£¨Ê±¼ä¸´ÔÓ¶ÈÓ¦ÎªO£¨1£©£©¡£
+ * å®šä¹‰æ ˆçš„æ•°æ®ç»“æ„ï¼Œè¯·åœ¨è¯¥ç±»å‹ä¸­å®ç°ä¸€ä¸ªèƒ½å¤Ÿå¾—åˆ°æ ˆä¸­æ‰€å«æœ€å°å…ƒç´ çš„minå‡½æ•°ï¼ˆæ—¶é—´å¤æ‚åº¦åº”ä¸ºOï¼ˆ1ï¼‰ï¼‰ã€‚
  * 
  */
-public class Õ»_°üº¬minº¯ÊıµÄÕ» {
+public class æ ˆ_åŒ…å«minå‡½æ•°çš„æ ˆ {
 	public class Solution {
 		Stack<Integer> re = new Stack<Integer>();
 		Stack<Integer> min = new Stack<Integer>();
 		int mintmp= Integer.MAX_VALUE;
 		public void push(int node) {
 	    	re.push(node);
-	        //Ö»ÓĞnodeĞ¡ÓÚmintmp²ÅÄÜÈëÕ»£¬ ²¢ÇÒ°ÑmintmpÉèÎªµ±Ç°nodeÖµ 
-	    	// Õı³£Ñ¹ÈëÕ» re = 3 4 5 2 5 1
-	    	// ×îĞ¡Õ»Îª Min = 3 3 3 2 2 1 
+	        //åªæœ‰nodeå°äºmintmpæ‰èƒ½å…¥æ ˆï¼Œ å¹¶ä¸”æŠŠmintmpè®¾ä¸ºå½“å‰nodeå€¼ 
+	    	// æ­£å¸¸å‹å…¥æ ˆ re = 3 4 5 2 5 1
+	    	// æœ€å°æ ˆä¸º Min = 3 3 3 2 2 1 
 	    	if(node<mintmp) {
 	        	mintmp=node;
 	        	min.push(node);
@@ -23,7 +23,7 @@ public class Õ»_°üº¬minº¯ÊıµÄÕ» {
 	        	min.push(mintmp);
 	        }
 	    }
-	    //ĞèÒªËæÊ±³öÕ» ²¢ÇÒµ÷Õû×îĞ¡Õ»µÄÔªËØ¹ØÏµ
+	    //éœ€è¦éšæ—¶å‡ºæ ˆ å¹¶ä¸”è°ƒæ•´æœ€å°æ ˆçš„å…ƒç´ å…³ç³»
 	    public void pop() {
 	        re.pop();
 	        min.pop();

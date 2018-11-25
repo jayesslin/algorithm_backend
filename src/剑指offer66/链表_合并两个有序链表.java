@@ -1,9 +1,9 @@
-package 剑指offer66;
+package 鍓戞寚offer66;
 
 /*
- * head 维护新的链表  用root表示链表的头 最后root.next指向head这个新表
+ * head 缁存姢鏂扮殑閾捐〃  鐢╮oot琛ㄧず閾捐〃鐨勫ご 鏈�鍚巖oot.next鎸囧悜head杩欎釜鏂拌〃
  */
-public class 链表_合并两个有序链表 {
+public class 閾捐〃_鍚堝苟涓や釜鏈夊簭閾捐〃 {
 	public class ListNode {
 	    int val;
 	    ListNode next = null;

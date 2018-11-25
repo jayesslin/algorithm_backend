@@ -1,25 +1,25 @@
-package ½£Ö¸offer66;
+package å‰‘æŒ‡offer66;
 
-import ½£Ö¸offer66.Ê÷_Ç°ÐòÖÐÐòÖØ½¨¶þ²æÊ÷.TreeNode;
+import å‰‘æŒ‡offer66.æ ‘_å‰åºä¸­åºé‡å»ºäºŒå‰æ ‘.TreeNode;
 
 /*
- * ÌâÄ¿ÃèÊö
-²Ù×÷¸ø¶¨µÄ¶þ²æÊ÷£¬½«Æä±ä»»ÎªÔ´¶þ²æÊ÷µÄ¾µÏñ¡£
-ÊäÈëÃèÊö:
-¶þ²æÊ÷µÄ¾µÏñ¶¨Òå£ºÔ´¶þ²æÊ÷ 
+ * é¢˜ç›®æè¿°
+æ“ä½œç»™å®šçš„äºŒå‰æ ‘ï¼Œå°†å…¶å˜æ¢ä¸ºæºäºŒå‰æ ‘çš„é•œåƒã€‚
+è¾“å…¥æè¿°:
+äºŒå‰æ ‘çš„é•œåƒå®šä¹‰ï¼šæºäºŒå‰æ ‘ 
     	    8
     	   /  \
     	  6   10
     	 / \  / \
     	5  7 9 11
-    	¾µÏñ¶þ²æÊ÷
+    	é•œåƒäºŒå‰æ ‘
     	    8
     	   /  \
     	  10   6
     	 / \  / \
     	11 9 7  5
  */
-public class Ê÷_¾µÏñ¶þ²æÊ÷ {
+public class æ ‘_é•œåƒäºŒå‰æ ‘ {
 	 public void Mirror(TreeNode root) {
 	       if (root!=null) { 
 	       TreeNode tmp = root.left; 

@@ -1,10 +1,10 @@
-package ��ָoffer66;
+package 剑指offer66;
 
 
 /*
- * ����һ�ö����������������ȡ��Ӹ���㵽Ҷ������ξ����Ľ�㣨������Ҷ��㣩�γ�����һ��·�����·���ĳ���Ϊ������ȡ�
+ * 输入一棵二叉树，求该树的深度。从根结点到叶结点依次经过的结点（含根、叶结点）形成树的一条路径，最长路径的长度为树的深度。
  */
-public class ��_����������� {
+public class 树_二叉树的深度 {
 	public class TreeNode{
 		int val;
 		TreeNode left;

@@ -1,8 +1,8 @@
-package ½£Ö¸offer66;
+package å‰‘æŒ‡offer66;
 
 import java.util.ArrayList;
 
-public class ¿ìËÙÅÅĞò {
+public class å¿«é€Ÿæ’åº {
 	public static int partition(int[] a , int p, int q ) {
 		int i = p;
 		for(int j=p+1; j<=q; j++) {

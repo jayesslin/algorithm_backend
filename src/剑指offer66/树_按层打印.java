@@ -1,4 +1,4 @@
-package ½£Ö¸offer66;
+package å‰‘æŒ‡offer66;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -6,7 +6,7 @@ import java.util.Queue;
 
 
 
-public class Ê÷_°´²ã´òÓ¡ {
+public class æ ‘_æŒ‰å±‚æ‰“å° {
 	public class TreeNode {
 	    int val = 0;
 	    TreeNode left = null;
@@ -21,7 +21,7 @@ public class Ê÷_°´²ã´òÓ¡ {
 		Queue<TreeNode> queue = new LinkedList<TreeNode>();
 		ArrayList<Integer> layer = new ArrayList<Integer>();
 		queue.add(root);
-		//¼ÆÊıÆ÷
+		//è®¡æ•°å™¨
 		int start = 0 ,end =1;
 		while (!queue.isEmpty()) {
 			TreeNode r= queue.remove();
@@ -33,7 +33,7 @@ public class Ê÷_°´²ã´òÓ¡ {
 			if(r.right!=null) {
 			queue.add(r.right);
 			}
-			//±éÀúÒ»²ã½áÊøºó £¬ ¼ÓÈëres ÊıÁĞ¡£ ÖØÖÃ¼ÆÊıÆ÷
+			//éå†ä¸€å±‚ç»“æŸå ï¼Œ åŠ å…¥res æ•°åˆ—ã€‚ é‡ç½®è®¡æ•°å™¨
 			if(start==end) {
 				end= res.size();
 				start= 0;

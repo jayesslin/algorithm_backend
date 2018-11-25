@@ -1,21 +1,21 @@
-package ½£Ö¸offer66;
+package å‰‘æŒ‡offer66;
 
 import java.util.ArrayList;
 
-public class Ñ°ÕÒ×îĞ¡K¸öÊı {
+public class å¯»æ‰¾æœ€å°Kä¸ªæ•° {
 	public static int partition(int[] a, int p ,int q) {
 		int pivot = a[p];
 		int i = p;
 		for(int j = p+1 ; j <=q; j++) {
 			if(a[j]<=pivot) {
 				i=i+1;
-				//½»»»j  ºÍ i++
+				//äº¤æ¢j  å’Œ i++
 				int temp = a[i];
 				a[i]= a[j];
 				a[j] = temp;
 			}
 		}  
-		//½»»» a[i] ºÍ a[p]
+		//äº¤æ¢ a[i] å’Œ a[p]
 		int temp = a[i] ;
 		a[i] = a[p];
 		a[p] = temp;
@@ -46,7 +46,7 @@ public class Ñ°ÕÒ×îĞ¡K¸öÊı {
 	        }
 	        return res;
 	    }
-	 //²âÊÔ
+	 //æµ‹è¯•
 	 public static void main(String args[]) {
 		 int[] c = {4,5,1,6,2,7,3,8};
 		 int k  = 4;

@@ -1,10 +1,10 @@
-package ½£Ö¸offer66;
+package å‰‘æŒ‡offer66;
 /*
- * ÊäÈëÒ»¸öÕûÊıÊı×é£¬ÅĞ¶Ï¸ÃÊı×éÊÇ²»ÊÇÄ³¶ş²æËÑË÷Ê÷µÄºóĞò±éÀúµÄ½á¹û¡£Èç¹ûÊÇÔòÊä³öYes,·ñÔòÊä³öNo¡£¼ÙÉèÊäÈëµÄÊı×éµÄÈÎÒâÁ½¸öÊı×Ö¶¼»¥²»ÏàÍ¬¡£
+ * è¾“å…¥ä¸€ä¸ªæ•´æ•°æ•°ç»„ï¼Œåˆ¤æ–­è¯¥æ•°ç»„æ˜¯ä¸æ˜¯æŸäºŒå‰æœç´¢æ ‘çš„ååºéå†çš„ç»“æœã€‚å¦‚æœæ˜¯åˆ™è¾“å‡ºYes,å¦åˆ™è¾“å‡ºNoã€‚å‡è®¾è¾“å…¥çš„æ•°ç»„çš„ä»»æ„ä¸¤ä¸ªæ•°å­—éƒ½äº’ä¸ç›¸åŒã€‚
  * 
  */
 import model.TreeNode;
-public class Ê÷_ÅĞ¶¨ÊÇ·ñÊÇºóĞò±éÀú {
+public class æ ‘_åˆ¤å®šæ˜¯å¦æ˜¯ååºéå† {
 	public boolean VerifySquenceOfBST(int [] sequence) {
         if(sequence.length==0) return false;
         if(sequence.length==1) return true;
@@ -24,19 +24,19 @@ public class Ê÷_ÅĞ¶¨ÊÇ·ñÊÇºóĞò±éÀú {
 		return judge(x,s,i-1)&&judge(x,i,e-1);
 	}
 }
-	/* Ê§°Ü·½·¨
-	 * Ë¼Â·
-	 * 1. ÕÒµ½root ºóĞòÊÇ×îºóÒ»¸ö
-	 * 2. ±éÀú×ó×ÓÊ÷Çø£¬ ÕÒµ½µÚÒ»¸ö´óÓÚrootµÄÊı
-	 * 3. ±éÀú´óÓÚÊıÓÒ±ßµÄÊ÷ µ±Óöµ½±ÈrootĞ¡µÄ ·µ»Øfalse 
-	 * 4.  µİ¹é×óÓÒ×ÓÊ÷ ÓÃ1 £¬2£¬3£¬
+	/* å¤±è´¥æ–¹æ³•
+	 * æ€è·¯
+	 * 1. æ‰¾åˆ°root ååºæ˜¯æœ€åä¸€ä¸ª
+	 * 2. éå†å·¦å­æ ‘åŒºï¼Œ æ‰¾åˆ°ç¬¬ä¸€ä¸ªå¤§äºrootçš„æ•°
+	 * 3. éå†å¤§äºæ•°å³è¾¹çš„æ ‘ å½“é‡åˆ°æ¯”rootå°çš„ è¿”å›false 
+	 * 4.  é€’å½’å·¦å³å­æ ‘ ç”¨1 ï¼Œ2ï¼Œ3ï¼Œ
 	 */
 	/*public boolean VerifySquenceOfBST(int [] sequence ) {
 		if(sequence==null) return true;
 		int[] a = null,b=null;
 		boolean res= true;
         int i = sequence[0];
-        //×ó×ÓÊ÷±éÀú³õÊ¼µã
+        //å·¦å­æ ‘éå†åˆå§‹ç‚¹
         int x = sequence[0];
         int temp=0; 
         int pivot = sequence[sequence.length-1];
@@ -53,13 +53,13 @@ public class Ê÷_ÅĞ¶¨ÊÇ·ñÊÇºóĞò±éÀú {
         	}
         }
         if(x!=0){
-        //×ó×ÓÊ÷
+        //å·¦å­æ ‘
 	        for(;x<temp;x++  ) {
 	        	a[x]=sequence[x];
 	        }
         }
         if(temp!=0) {
-        //ÓÒ×ÓÊ÷
+        //å³å­æ ‘
 	        for(;temp<sequence.length-2;temp++) {
 	        	b[temp]=sequence[temp];
 	        }

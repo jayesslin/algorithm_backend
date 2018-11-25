@@ -1,13 +1,13 @@
-package ½£Ö¸offer66;
+package å‰‘æŒ‡offer66;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 /*
- * ´ÓÉÏÍùÏÂ´òÓ¡³ö¶ş²æÊ÷µÄÃ¿¸ö½Úµã£¬Í¬²ã½Úµã´Ó×óÖÁÓÒ´òÓ¡¡£
+ * ä»ä¸Šå¾€ä¸‹æ‰“å°å‡ºäºŒå‰æ ‘çš„æ¯ä¸ªèŠ‚ç‚¹ï¼ŒåŒå±‚èŠ‚ç‚¹ä»å·¦è‡³å³æ‰“å°ã€‚
  * 
  */
-public class Ê÷_°´²ã´òÓ¡¶ş²æÊ÷ {
+public class æ ‘_æŒ‰å±‚æ‰“å°äºŒå‰æ ‘ {
 	public class TreeNode {
 	    int val = 0;
 	    TreeNode left = null;
@@ -20,14 +20,14 @@ public class Ê÷_°´²ã´òÓ¡¶ş²æÊ÷ {
 
 	}
 	public ArrayList<Integer> PrintFromTopToBottom(TreeNode root) {
-		//ÉêÇëÒ»¸ö¶ÓÁĞ ÏÈ½øºó³ö
+		//ç”³è¯·ä¸€ä¸ªé˜Ÿåˆ— å…ˆè¿›åå‡º
 		Queue<TreeNode> tmp = (Queue<TreeNode>) new LinkedList<TreeNode>();
 		ArrayList<Integer> res= new ArrayList<Integer>();
-		//µÚÒ»¸ö³ö¿ÚÌõ¼ş
+		//ç¬¬ä¸€ä¸ªå‡ºå£æ¡ä»¶
 		if (root==null) return res;
-		//°Ñroot¼ÓÈë¶ÓÁĞ 
+		//æŠŠrootåŠ å…¥é˜Ÿåˆ— 
 		tmp.add(root);
-		//Èç¹û¶ÓÁĞ²»¿Õ£¬ °Ñ ¶ÓÁĞÄÚµÄÖµÈ¡³öÀ´ £¬¼ÓÈë½á¹ûres £¬²¢ÇÒ°Ñ¸Ã½áµãµÄ×Ó½Úµã·ÅÈë¶ÓÁĞ
+		//å¦‚æœé˜Ÿåˆ—ä¸ç©ºï¼Œ æŠŠ é˜Ÿåˆ—å†…çš„å€¼å–å‡ºæ¥ ï¼ŒåŠ å…¥ç»“æœres ï¼Œå¹¶ä¸”æŠŠè¯¥ç»“ç‚¹çš„å­èŠ‚ç‚¹æ”¾å…¥é˜Ÿåˆ—
 		while(!tmp.isEmpty()) {
 			TreeNode root1 = tmp.poll();
 			res.add(root1.val);

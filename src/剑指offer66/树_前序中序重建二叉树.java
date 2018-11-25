@@ -1,6 +1,6 @@
-package ½£Ö¸offer66;
+package å‰‘æŒ‡offer66;
 
-public class Ê÷_Ç°ĞòÖĞĞòÖØ½¨¶ş²æÊ÷ {
+public class æ ‘_å‰åºä¸­åºé‡å»ºäºŒå‰æ ‘ {
 	public class TreeNode{
 		int val;
 		TreeNode left;
@@ -15,22 +15,22 @@ public class Ê÷_Ç°ĞòÖĞĞòÖØ½¨¶ş²æÊ÷ {
 	        return node;
 	    }
 		private TreeNode reConstructBinaryTree(int[] pre, int prestart, int preend,int[] in, int instart, int inend) {
-			//µİ¹éÍË³öÌõ¼şÈç¹û¿ªÊ¼´óÓÚ½áÊøµÄÎ»ÖÃ Ö±½ÓÍË³ö ×ÓÒ¶½áµãÎªNULL
+			//é€’å½’é€€å‡ºæ¡ä»¶å¦‚æœå¼€å§‹å¤§äºç»“æŸçš„ä½ç½® ç›´æ¥é€€å‡º å­å¶ç»“ç‚¹ä¸ºNULL
 			if(prestart>preend||instart>inend) {
 			return null;
 			}
-			//¸ù½Úµã ÎªÏÈĞò±éÀúµÚÒ»¸ö½áµã
+			//æ ¹èŠ‚ç‚¹ ä¸ºå…ˆåºéå†ç¬¬ä¸€ä¸ªç»“ç‚¹
 			TreeNode root = new TreeNode(pre[prestart]);
-			//±éÀúÖĞĞò±éÀú£¬ 
+			//éå†ä¸­åºéå†ï¼Œ 
 			for(int i = instart; i<=inend; i++) 
 				if (in[i]==pre[prestart]) {
-					//½áºÏÇ°Ğò±éÀú  ÖĞĞò±éÀúµÄ¸ù½Úµã×ó±ß Îª ¸Ã×ÓÊ÷µÄ×ó×ÓÊ÷ £¬ ÓÒ±ß Îª ×ÓÊ÷µÄÓÒ×ÓÊ÷
-					//¸ù¾İ iµÄÖµ ºÍ Ç°ÖĞĞòÎ»ÖÃ È·¶¨ ×ó×ÓÊ÷ ÔÚ Ç°ĞòµÄ·¶Î§£¬ºÍÔÚÖĞĞòµÄ·¶Î§
+					//ç»“åˆå‰åºéå†  ä¸­åºéå†çš„æ ¹èŠ‚ç‚¹å·¦è¾¹ ä¸º è¯¥å­æ ‘çš„å·¦å­æ ‘ ï¼Œ å³è¾¹ ä¸º å­æ ‘çš„å³å­æ ‘
+					//æ ¹æ® içš„å€¼ å’Œ å‰ä¸­åºä½ç½® ç¡®å®š å·¦å­æ ‘ åœ¨ å‰åºçš„èŒƒå›´ï¼Œå’Œåœ¨ä¸­åºçš„èŒƒå›´
 					root.left=reConstructBinaryTree(pre,prestart+1,i-instart+prestart,in,instart,i-1);
-					//¸ù¾İ iµÄÖµ ºÍ Ç°ÖĞĞòÎ»ÖÃ È·¶¨ ÓÒ×ÓÊ÷ ÔÚ Ç°ĞòµÄ·¶Î§£¬   ºÍÔÚÖĞĞòµÄ·¶Î§
+					//æ ¹æ® içš„å€¼ å’Œ å‰ä¸­åºä½ç½® ç¡®å®š å³å­æ ‘ åœ¨ å‰åºçš„èŒƒå›´ï¼Œ   å’Œåœ¨ä¸­åºçš„èŒƒå›´
 					root.right =reConstructBinaryTree(pre,i-instart+prestart+1,preend,in,i+1,inend);
 				}	
-			//Æ¥Åä½áÊø Ìø³öÑ­»· ·¶Î§¸Ã×ÓÊ÷ ¸ù½Úµã
+			//åŒ¹é…ç»“æŸ è·³å‡ºå¾ªç¯ èŒƒå›´è¯¥å­æ ‘ æ ¹èŠ‚ç‚¹
 			return root;
 			
 		
