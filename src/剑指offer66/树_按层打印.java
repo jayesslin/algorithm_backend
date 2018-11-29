@@ -20,6 +20,7 @@ public class 树_按层打印 {
         if(root==null) return res;
 		Queue<TreeNode> queue = new LinkedList<TreeNode>();
 		ArrayList<Integer> layer = new ArrayList<Integer>();
+		
 		queue.add(root);
 		//计数器
 		int start = 0 ,end =1;

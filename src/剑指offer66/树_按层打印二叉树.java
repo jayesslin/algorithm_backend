@@ -12,7 +12,7 @@ public class 树_按层打印二叉树 {
 	    int val = 0;
 	    TreeNode left = null;
 	    TreeNode right = null;
-
+	   
 	    public TreeNode(int val) {
 	        this.val = val;
 
@@ -21,7 +21,7 @@ public class 树_按层打印二叉树 {
 	}
 	public ArrayList<Integer> PrintFromTopToBottom(TreeNode root) {
 		//申请一个队列 先进后出
-		Queue<TreeNode> tmp = (Queue<TreeNode>) new LinkedList<TreeNode>();
+		Queue<TreeNode> tmp =new LinkedList<TreeNode>();
 		ArrayList<Integer> res= new ArrayList<Integer>();
 		//第一个出口条件
 		if (root==null) return res;
