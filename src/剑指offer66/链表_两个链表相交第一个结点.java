@@ -29,4 +29,17 @@ public class 链表_两个链表相交第一个结点 {
 		 }
 		 return null;
     }
+	/*
+	 * 遍历两个链表 ，  短的结束  换成长的  ， 长的结束 换成短的
+	 * 或者两个同时达到 NULL
+	 */
+	public ListNode FindFirstCommonNode2(ListNode pHead1, ListNode pHead2) {
+		ListNode l1 = pHead1;
+		ListNode l2 = pHead2;
+		while(l1 != l2) {
+			l1 = (l1 == null? pHead2: l1.next);
+			l2 = (l2 == null? pHead1: l1.next);
+		}
+		return l1;
+	}
 }
